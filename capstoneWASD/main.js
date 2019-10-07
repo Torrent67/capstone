@@ -35,7 +35,7 @@ loadingManager = new THREE.LoadingManager();
 	camera = new THREE.OrthographicCamera( - d * aspect, d * aspect, d, - d, 1, 1000 );
 	
 	mesh = new THREE.Mesh(
-		new THREE.TorusGeometry(20, 4, 20, 100 ),
+		new THREE.TorusGeometry(30, 2, 20, 100 ),
 		new THREE.MeshBasicMaterial({color:0xff4444, wireframe:true})
 	);
 	mesh.position.y += 1;
@@ -132,8 +132,8 @@ if( RESOURSE_LOADED == true){
 
     requestAnimationFrame(animate);
 
-    mesh.rotation.x += 0.01;
-    mesh.rotation.y -= 0.07;
+    mesh.rotation.y += 0.01;
+    mesh.rotation.z += 2;
 
     	// Keyboard movement inputs
 	if(keyboard[68]){ // D key
