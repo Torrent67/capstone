@@ -55,7 +55,20 @@ loadingManager = new THREE.LoadingManager();
 	meshFloor.receiveShadow = true;
 	scene.add(meshFloor);
 	
+
+	var loader = new THREE.GLTFLoader();
+	loader.load('rail_basic2_v1.glb', handle_load);
+
+	var mesh;
+
+	fuction handle_load(gltf){
+		mesh = gltf.scene.children[0];
+		scene.add(mesh);
+		mesh.position.z = -10;
+	}
 	
+
+
 	// LIGHTS
 	ambientLight = new THREE.AmbientLight(0xffffff, 1);
 	scene.add(ambientLight);
