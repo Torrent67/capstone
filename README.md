@@ -7,7 +7,11 @@
 ## Description
 # A game using where a user would have to manage trains on a map, trains would get faster over time and the user has to try and avoid collisions, after clearing a stage user would be given another one with more things to manage, stage one concept looks like this
 
+<img src = "capstoneWASD/images/userview.png" width = "1000">
+
 ## Component tree should work something like this but subject to change.
+
+<img src = "capstoneWASD/images/TrainManager.png" width = "1000">
 
 
 
@@ -21,8 +25,6 @@
 2. Run local host server :
     ```
 
-   
-<img src ="src/assets/images/ReactDiagram.png" width = "1000">
 
 ## Known Bugs
 * No known bugs at this time.
