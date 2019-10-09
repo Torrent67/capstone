@@ -27,10 +27,10 @@ camera = new THREE.PerspectiveCamera(40,window.innerWidth/window.innerHeight,1,5
 	controls.addEventListener('change', renderer);
 
 //LIGHTS
-hlight = new THREE.AmbientLight (0x404040,10);
+hlight = new THREE.PointLight (0xffffff,100);
 scene.add(hlight);
 directionalLight = new THREE.DirectionalLight(0xffffff,1);
-directionalLight.position.set(0,1,0);
+directionalLight.position.set(0,4,0);
 directionalLight.castShadow = false;
 scene.add(directionalLight);
 
